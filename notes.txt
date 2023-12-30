@@ -1,0 +1,7 @@
+print(a[::2])
+python slicing
+
+https://www.youtube.com/watch?v=gOMW_n2-2Mw
+
+dir() get functions
+help() explain functions
