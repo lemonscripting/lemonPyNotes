@@ -52,5 +52,25 @@ my_function()  # This will print 50
 
 ###### As mentioned,```global variable_name``` can be declared in an inner scope to change the variable from a local variable to be a global variable.
 
+```python
+#another illustration
+def outer_function():
+    # Define a variable within the scope of outer_function
+    inner_variable = 10
+    
+    def inner_function():
+        # Try to access and modify the inner_variable within inner_function
+        inner_variable += 5  # This line will raise an UnboundLocalError
+        print(inner_variable)
+    
+    inner_function()
+
+# Call the outer_function
+outer_function()
+
+# Try to access inner_variable outside its scope (this will raise an error)
+print(inner_variable)  # This line will raise a NameError
+
+```
 ##### @lemonscripting
 
