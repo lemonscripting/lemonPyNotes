@@ -1,11 +1,11 @@
 # 006_Variable_Scopes
 
-###### In Python, a scope refers to the region of a program where a particular variable is defined and can be accessed. The concept of scope is essential for understanding the visibility and lifetime of variables. Python has two main types of scopes, Global and Local.
+###### In Python, a scope refers to the region of a program where a particular variable is defined and can be accessed. In general, Python has two main types of scopes, Global and Local.
 
 ## Global Scope
--Variables defined outside of any function or class have a global scope.
--They can be accessed from anywhere in the code, both inside and outside functions or classes.
--Can be interpreted as the "ROOT DIRECTORY" of the codes
+- Variables defined outside of any function or class have a global scope.
+- They can be accessed and modified from anywhere in the code, both inside and outside functions or classes.
+- Can be interpreted as the "ROOT DIRECTORY" of the codes
 ###### A global variable can be accessed anywhere throughout the code
 ```python
 a = 100
@@ -15,7 +15,7 @@ function()  # outputs 100
 ```
 
 ## Global Keyword
-###### If you want to access a global variable from inner scopes of the code, you can use the ```global``` keyword which acts as a hook connecting inner scopes and the "ROOT DIRECTORY" of the code.
+###### If you want to modify a global variable from inner scopes of the code, you can use the ```global``` keyword which acts as a hook connecting inner scopes and the "ROOT DIRECTORY" of the code.
 
 ```python
 a = 100
